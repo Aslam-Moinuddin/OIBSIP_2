@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="left">
+      <div class="top-section">
+        <header>
+          <h1><span>A</span>slam</h1>
+        </header>
+      </div>
+      <div class="bottom-section">
+        <nav>
+          <ul>
+            <li>
+              <a href="#home"
+                ><span><i class="fa fa-home"></i></span> Home</a
+              >
+            </li>
+            <li>
+              <a href="#about"
+                ><span><i class="fa fa-user"></i></span> About Me</a
+              >
+            </li>
+            <li>
+              <a href="#skills"
+                ><span><i class="fa fa-wrench"></i></span> Skills</a
+              >
+            </li>
+            <li>
+              <a href="#projects"
+                ><span><i class="fa fa-briefcase"></i></span> Projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact"
+                ><span><i class="fa fa-phone"></i></span> Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="right">
+      <section id="home">
+        <div class="content">
+          <div class="left_container">
+            <div style="flex-direction: column">
+              <span style="font-size: 25px">Myself</span>
+              <span style="color: #de6135; font-size: 35px">Aslam</span>
+              <span style="display: flex; font-size: 30px">
+                I am a &nbsp;
+                <div
+                  style="color: #de6135; font-size: 30px"
+                  id="appear_disappear"
+                >
+                  Web-developer.
+                </div>
+              </span>
+              <p>
+                I'm a beginner Full Stack Web Developer. Excited to learn with
+                Friends and colleagues.
+              </p>
+            </div>
+          </div>
+          <div class="right_container">
+            <figure>
+              <img src="images/profile_pic.png" alt="Profile Pic" />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a passionate web developer who wants to create better functional
+          websites. With a background in computer science, I have honed my
+          skills in HTML, CSS to turn my passion into reality.
+        </p>
+        <p>
+          In my free time, I enjoy exploring new technologies, reading tech
+          blogs, and working on open-source projects. I believe that the web is
+          a powerful platform for positive change and am dedicated to
+          contributing to its growth.
+        </p>
+        <div class="resume-btn">
+          <button onclick="openResume()">Download Resume</button>
+          <script>
+            function openResume() {
+              window.location.href = "resume.html";
+            }
+          </script>
+        </div>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <p>
+          Here are some of the skills I want to develop during my journey as a
+          web developer:
+        </p>
+        <table>
+          <tr>
+            <th>Skill</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>
+              HTML <i class="fa-brands fa-html5" style="font-size: 1.5em"></i>
+            </td>
+            <td>Expert</td>
+          </tr>
+          <tr>
+            <td>
+              CSS <i class="fa-brands fa-css3-alt" style="font-size: 1.5em"></i>
+            </td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>
+              JavaScript
+              <i class="fa-brands fa-square-js" style="font-size: 1.5em"></i>
+            </td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td>
+              MongoDB
+              <i class="fa-solid fa-database" style="font-size: 1.5em"></i>
+            </td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td>
+              node.js <i class="fa-brands fa-node" style="font-size: 1.5em"></i>
+            </td>
+            <td>Beginner</td>
+          </tr>
+        </table>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+          <img src="images/project1.PNG" alt="Project 1" />
+          <h3>Landing Page</h3>
+          <p>Description :</p>
+          <p>
+            The above Project is all about the Landing Page for a Proudct
+            promotion.
+          </p>
+          <a
+            href="https://github.com/Aslam-Moinuddin/OIBSIP"
+            class="btn"
+            target="_blank"
+            ><- Github link -></a
+          >
+        </div>
+        <div class="project-container">
+          <img src="images/project2.PNG" alt="Project 2" />
+          <h3>Temperature Converter</h3>
+          <p>Description :</p>
+          <p>
+            I decided to create a simple, user-friendly, and efficient tool to
+            quickly switch from celcius to fahrenheit and to kelvin.
+          </p>
+          <a
+            href="https://github.com/Aslam-Moinuddin/OIBSIP_3"
+            class="btn"
+            target="_blank"
+            ><- Github link -></a
+          >
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact_header">
+          <h2>Contact</h2>
+        </div>
+        <div class="container">
+          <div class="l_container">
+            <form action="#">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" required />
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="3"
+                required
+              ></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="r_container">
+            <p>Email Me :</p>
+            <a href="mailto:aslammoinuddin4@example.com"
+              >aslammoinuddin4@example.com</a
+            >
+            <div class="social-media-links">
+              <p>social-media-links :</p>
+              <a
+                href="https://www.linkedin.com/in/aslam-moinuddin/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.instagram.com/aslam.4789/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://github.com/Aslam-Moinuddin" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

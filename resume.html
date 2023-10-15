@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <style>
+      body {
+        background-color: aquamarine;
+      }
+      .back_to-btn {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 600px;
+      }
+      .back_to-btn button {
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 16px;
+        color: white;
+        background-color: #ff5733;
+        cursor: pointer;
+      }
+      .back_to-btn button:hover {
+        background-color: #ff341c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="back_to-btn">
+      <button onclick="back_to()">Go Back</button>
+      <script>
+        function back_to() {
+          window.location.href = "index.html#about";
+        }
+      </script>
+    </div>
+    <iframe
+      src="documents/Aslam Resume.pdf"
+      frameborder="1"
+      height="600px"
+      width="100%"
+    ></iframe>
+  </body>
+</html>
